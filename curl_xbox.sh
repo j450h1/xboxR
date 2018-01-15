@@ -29,7 +29,8 @@ done
 
 if [ $COUNTER = 0 ];
   then
-  echo "$GAMERTAG is NOT playing $GAME"
+  exit 1
+  #echo "$GAMERTAG is NOT playing $GAME"
 fi  
 
      
