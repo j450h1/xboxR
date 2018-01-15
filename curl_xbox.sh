@@ -11,7 +11,7 @@
 #https://github.com/stedolan/jq/issues/189
 
 #http://www.starkandwayne.com/blog/bash-for-loop-over-json-array-using-jq/
-
+COUNTER=0
 for row in $(curl -H "X-AUTH: $AUTH_KEY" https://xboxapi.com/v2/$XUID/presence/ | \
 jq -r '.["devices"][0]["titles"] | map("\(.name)") | .[] | @base64'); 
 do  
@@ -22,9 +22,15 @@ do
 #   echo $name
    if [ "$name" == "$GAME" ];
     then
-    echo "$GAMERTAG IS PLAYING $name"
+    echo "$GAMERTAG is playing $name"
+    COUNTER=$(expr $COUNTER + 1)
    fi
-done  
+done
+
+if [ $COUNTER = 0 ];
+  then
+  echo "$GAMERTAG is NOT playing $GAME"
+fi  
 
      
 
