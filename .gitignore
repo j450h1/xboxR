@@ -3,3 +3,5 @@
 .RData
 .Ruserdata
 curl_xbox.sh
+.httr-oauth
+environment_variables.sh
