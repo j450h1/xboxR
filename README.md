@@ -9,6 +9,7 @@ Currently a POC, shell script works to notify you when one of your friend's is o
 * AUTH_KEY
 * GAMERTAG
 * XUID
+* GAME
 
 For example: 
 `export AUTH_KEY="xxxxxxxxxxxxxxxxxxxxxxxx"`
