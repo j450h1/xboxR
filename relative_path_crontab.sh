@@ -1,1 +1,1 @@
-./environment_variables.sh && ./curl_xbox.sh
+. environment_variables.sh && ./curl_xbox.sh
