@@ -9,4 +9,4 @@ This a planned R package for the unofficial xbox one API - https://xboxapi.com/
 * XUID
 
 For example: 
-export AUTH_KEY="xxxxxxxxxxxxxxxxxxxxxxxx"
+`export AUTH_KEY="xxxxxxxxxxxxxxxxxxxxxxxx"`
